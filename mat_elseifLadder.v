@@ -37,7 +37,7 @@ always @(posedge clk) begin
         else if (row[2]==1) display = 8'b00111110;//B
         else if (row[3]==1) display = 8'b10001110;//F
     end
-    col = ({col[2:0],col[3]});
+    col = ({col[2:0],col[3]});    //column changes at the rate of 4MHz
 end
 
 assign segment = display;
