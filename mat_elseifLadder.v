@@ -8,7 +8,7 @@ module matkey (
 
 reg [7:0] display ;
 
-initial col = 4'b0001;
+initial col = 4'b0001;        //Initialise the columns
 
 always @(posedge clk) ctrl = 4'b0111;
 
