@@ -17,7 +17,7 @@ always @(posedge clk) begin
         if (row[0]==1) display = 8'b11111100;//0
         else if (row[1]==1) display = 8'b01100110;//4
         else if (row[2]==1) display = 8'b11111110;//8
-        else if (row[3]==1) display = 8'b11111100;//0
+        else if (row[3]==1) display = 8'b10011100;//C
     end
     else if (col==4'b0010) begin
         if (row[0]==1) display = 8'b01100000;//1
